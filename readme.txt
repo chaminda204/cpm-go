@@ -7,7 +7,8 @@ Following these instructions will start a Linux virtual machine running the Open
 1) Copy the .box file from the USB key to a directory on your hard drive (assuming C:\openmrs for the remainder of this 
 read me). 
 
-2) Install VirtualBox and Vagrant (using the installers in the Windows and MacOS directories on the USB key).
+2) Install VirtualBox and Vagrant (using the installers in the Windows and MacOS directories on the USB key). 
+Don't download the latest VirtualBox - it doesn't work - use the provided 4.2.12.
 
 3) Open up a command prompt and run:
     cd c:\openmrs
