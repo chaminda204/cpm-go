@@ -37,4 +37,5 @@ Feel free to code in the IDE of your choice or use VIM.
 To compile the package, run on the VM:
     ./go package
 
-To deploy the generated package…
+This generates a module file at /vagrant/code/openmrs-cpm/omod/*.omod. For testing, you can login to the web app and
+manually upload the module via the Administration page.
