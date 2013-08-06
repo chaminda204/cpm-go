@@ -1,6 +1,6 @@
-==============================================================
-Setting up the OpenMRS Concept Proposal Module Virtual Machine
-==============================================================
+====================================================================
+Setting up the OpenMRS Concept Proposal Module (CPM) Virtual Machine
+====================================================================
 
 Following these instructions will start a Linux virtual machine running the OpenMRS web app.
 
@@ -16,8 +16,10 @@ Don't download the latest VirtualBox - it doesn't work - use the provided 4.2.12
     vagrant init
     vagrant up
 
-The OpenMRS web app is now viewable at http://192.168.33.10:8080/openmrs/
-(username: admin, password: Admin123)
+4) The OpenMRS web app is now viewable at http://192.168.33.10:8080/openmrs/.
+Login with username "admin" and password "Admin123" and follow the prompts there to finish installation. 
+When prompted, set the MySQL root password to "OpenMRS".
+
 
 ==================================
 Developers only: in order to code:
