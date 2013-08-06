@@ -23,7 +23,7 @@ Don't download the latest VirtualBox - it doesn't work - use the provided 4.2.12
     vagrant up
 
 4) The OpenMRS web app is now viewable at http://192.168.33.10:8080/openmrs/.
-Login with username "admin" and password "Admin123" and follow the prompts there to finish installation. 
+Login (username: admin, password: Admin123) and follow the prompts there to finish installation. 
 When prompted, set the MySQL root password to "OpenMRS".
 
 
