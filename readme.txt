@@ -1,4 +1,10 @@
 ====================================================================
+NB: THE LATEST VERSION OF THIS FILE IS AVAILABLE AT:
+https://github.com/rdoh/cpm-go/blob/master/readme.txt. 
+Please correct as necessary.
+====================================================================
+
+====================================================================
 Setting up the OpenMRS Concept Proposal Module (CPM) Virtual Machine
 ====================================================================
 
