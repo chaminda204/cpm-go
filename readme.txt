@@ -18,8 +18,6 @@ Don't download the latest VirtualBox - it doesn't work - use the provided 4.2.12
 
 3) Open up a command prompt and run:
     cd c:\openmrs
-    vagrant box add openmrs-dev ./openmrs-dev.box
-    vagrant init
     vagrant up
 
 4) The OpenMRS web app is now viewable at http://192.168.33.10:8080/openmrs/.
