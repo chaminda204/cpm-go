@@ -28,13 +28,13 @@ When prompted, set the MySQL root password to "OpenMRS".
 Developers only: in order to code:
 ==================================
 
-4) Open an SSH session to the VM:
+4) Fork the openmrs-cpm repository at https://github.com/OpenMRS-Australia/openmrs-cpm (button at top right of the page).
+
+5) Open an SSH session to the VM:
     On OSX: "vagrant ssh"
     On Windows: install PuTTY from Windows/ on the USB key, and use it to connect to localhost:2222 (username: vagrant, password: vagrant). 
 
-5) Fork the openmrs-cpm repository at https://github.com/OpenMRS-Australia/openmrs-cpm (button at top right of the page).
-
-5) Now on the VM, check out the source code:
+6) Now on the VM, check out the source code:
     cd /vagrant/code
     git clone https://github.com/<your-username>/openmrs-cpm.git
 
