@@ -42,8 +42,8 @@ The VM directory /vagrant/code/openmrs-cpm is shared with your host machine at C
 Feel free to code in the IDE of your choice or use VIM.
                          
 To compile the package, run on the VM:
-    ./go package
+    ./go
 
-This generates a module file at /vagrant/code/openmrs-cpm/omod/*.omod. 
+This generates a module file at /vagrant/code/openmrs-cpm/build/libs/*.omod. 
 For testing, you can login to the web app and manually upload the module via 
 Administration -> Manage Modules -> Add or Upgrade Modules.
