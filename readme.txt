@@ -15,11 +15,14 @@ read me).
 
 2) Install VirtualBox and Vagrant (using the installers in the Windows and MacOS directories on the USB key). 
 
+3) Make sure you are connected to the Internet at this point or the VM you are about to start will have problems.
+
 3) Open up a command prompt and run:
     cd c:\openmrs
     vagrant up
 
-4) The OpenMRS web app is now viewable at http://192.168.33.10:8080/openmrs/. You can login with username: admin, password: Admin123).
+4) The OpenMRS web app is now viewable at http://192.168.33.10:8080/openmrs/. 
+    You can login with username: admin, password: Admin123).
 
 ==================================
 Developers only: in order to code:
@@ -29,13 +32,13 @@ Developers only: in order to code:
 
 5) Open an SSH session to the VM:
     On OSX: "vagrant ssh"
-    On Windows: install PuTTY from Windows/ on the USB key, and use it to connect to localhost:2222 (username: vagrant, password: vagrant). 
+    On Windows: install PuTTY from Windows/ on the USB key, and use it to connect to localhost:2222 (u: vagrant, p: vagrant). 
 
 6) Now on the VM, clone the source code from your newly forked repository:
     cd /vagrant/code
     git clone https://github.com/<your-username>/openmrs-cpm.git
 
-The VM directory /vagrant/code/openmrs-cpm is shared with your host machine at C:\vagrant-openmrs\code\openmrs-cpm. 
+The VM directory /vagrant/code/openmrs-cpm is shared with your host machine at C:\openmrs\code\openmrs-cpm. 
 Feel free to code in the IDE of your choice or use VIM.
                          
 To compile the package, run on the VM:
