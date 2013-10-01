@@ -15,26 +15,27 @@ read me).
 
 2) Install VirtualBox and Vagrant (using the installers in the Windows and MacOS directories on the USB key). 
 
-3) Make sure you are connected to the Internet at this point or the VM you are about to start will have problems.
-
 3) Open up a command prompt and run:
     cd c:\openmrs
-    vagrant up
+    vagrant up 
+    (MacOS users: if you see an error about network interfaces here, try 'sudo vagrant up')
 
 4) The OpenMRS web app is now viewable at http://192.168.33.10:8080/openmrs/. 
-    You can login with username: admin, password: Admin123).
+    You can login with username: admin, password: Admin123.
+    
+At this point you will have a running instance of OpenMRS with an out-of-date version of the CPM installed.
 
-==================================
-Developers only: in order to code:
-==================================
+=========================================================================================
+Continue in order to pull/push updates, build, package, install and test the CPM locally:
+=========================================================================================
 
-4) Fork the openmrs-cpm repository at https://github.com/OpenMRS-Australia/openmrs-cpm (button at top right of the page).
+5) Fork the openmrs-cpm repository at https://github.com/OpenMRS-Australia/openmrs-cpm (button at top right of the page).
 
-5) Open an SSH session to the VM:
+6) Open an SSH session to the VM:
     On OSX: "vagrant ssh"
     On Windows: install PuTTY from Windows/ on the USB key, and use it to connect to localhost:2222 (u: vagrant, p: vagrant). 
 
-6) Now on the VM, clone the source code from your newly forked repository:
+7) Now on the VM, clone the source code from your newly forked repository:
     cd /vagrant/code
     git clone https://github.com/<your-username>/openmrs-cpm.git
 
