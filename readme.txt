@@ -36,16 +36,49 @@ Continue in order to pull/push updates, build, package, install and test the CPM
     On Windows: install PuTTY from Windows/ on the USB key, and use it to connect to localhost:2222 (u: vagrant, p: vagrant). 
 
 7) Now on the VM, clone the source code from your newly forked repository:
-    cd /vagrant/code
-    git clone https://github.com/<your-username>/openmrs-cpm.git
+    $ cd /vagrant/code
+    $ git clone https://github.com/<your-username>/openmrs-cpm.git
 
 The VM directory /vagrant/code/openmrs-cpm is shared with your host machine at C:\openmrs\code\openmrs-cpm. 
 Feel free to code in the IDE of your choice or use VIM.
                          
 To compile the package, run on the VM:
-    cd /vagrant/code/openmrs-cpm
-    ./go
+    $ cd /vagrant/code/openmrs-cpm
+    $ ./go
 
 This generates a module file at /vagrant/code/openmrs-cpm/build/libs/*.omod. 
 For testing, you can login to the web app and manually upload the module via 
 Administration -> Manage Modules -> Add or Upgrade Modules.
+
+=========================================================================================
+Troubleshooting
+=========================================================================================
+1. VM is not connected to the internet to clone the code.
+---> Probably you have started VM before connecting to the internet, easiest way to solve 
+     the problem is to shutdown the VM and starting it up again:
+     $ vagrant halt
+     $ vagrant up     
+     
+2. I get the following error when trying to run "vagrant":
+    VBoxManage.exe: error: Could not rename the directory 'C:\Users\...\VirtualBox VMs\openmrs-dev_1' to
+    'C:\Users\...\VirtualBox VMs\openmrs-dev' to save the settings file (VERR_ALREADY_EXISTS)
+---> You need to delete the following folders:
+    i.  "C:\Users\...\VirtualBox VMs\openmrs-dev_1"
+    ii. "C:\Users\...\VirtualBox VMs\openmrs-dev"
+    iii. in current openMRS folder, the hidden ".vagrant" folder. (You can see it with "dir /a" command in
+    windows or "ls -a" in Unix based systems)
+   > Run the following command:
+   $ vagrant destroy
+   > Start vagrant again
+   $ vagrant up
+   > If you get further errors, run vagrant in debug mode for further troubleshooting
+   $ VAGRANT_LOG=DEBUG vagrant up
+    
+3. I get the following error when trying to run "vagrant":
+   failed to untar the box file.
+---> You have the older version of vagrant on your system. Uninstall it and install the latest version.
+
+4. When starting to run "./go" script, I get the following error:
+   ERROR: JAVA_HOME is set to an invalid directory: /usr/
+---> run the following command from your ssh command prompt:
+   $ export JAVA_HOME="/usr/"
