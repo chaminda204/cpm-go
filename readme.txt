@@ -19,10 +19,7 @@ read me).
     cd c:\openmrs
     vagrant up
 
-4) The OpenMRS web app is now viewable at http://192.168.33.10:8080/openmrs/.
-Login (username: admin, password: Admin123) and follow the prompts there to finish installation. 
-When prompted, set the MySQL root password to "OpenMRS".
-
+4) The OpenMRS web app is now viewable at http://192.168.33.10:8080/openmrs/. You can login with username: admin, password: Admin123).
 
 ==================================
 Developers only: in order to code:
@@ -34,7 +31,7 @@ Developers only: in order to code:
     On OSX: "vagrant ssh"
     On Windows: install PuTTY from Windows/ on the USB key, and use it to connect to localhost:2222 (username: vagrant, password: vagrant). 
 
-6) Now on the VM, check out the source code:
+6) Now on the VM, clone the source code from your newly forked repository:
     cd /vagrant/code
     git clone https://github.com/<your-username>/openmrs-cpm.git
 
