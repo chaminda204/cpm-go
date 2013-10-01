@@ -50,6 +50,9 @@ This generates a module file at /vagrant/code/openmrs-cpm/build/libs/*.omod.
 For testing, you can login to the web app and manually upload the module via 
 Administration -> Manage Modules -> Add or Upgrade Modules.
 
+8) When you want to shutdown the VM, use the following command:
+    $ vagrant halt
+
 =========================================================================================
 Troubleshooting
 =========================================================================================
