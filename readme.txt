@@ -39,9 +39,12 @@ Continue in order to pull/push updates, build, package, install and test the CPM
     $ cd /vagrant/code
     $ git clone https://github.com/<your-username>/openmrs-cpm.git
 
+8) From the same directory, add the upstream repo so that you can pull changes:
+    $ git add upstream https://github.com/OpenMRS-Australia/openmrs-cpm
+
 The VM directory /vagrant/code/openmrs-cpm is shared with your host machine at C:\openmrs\code\openmrs-cpm. 
 Feel free to code in the IDE of your choice or use VIM.
-                         
+
 To compile the package, run on the VM:
     $ cd /vagrant/code/openmrs-cpm
     $ ./go
@@ -50,7 +53,7 @@ This generates a module file at /vagrant/code/openmrs-cpm/build/libs/*.omod.
 For testing, you can login to the web app and manually upload the module via 
 Administration -> Manage Modules -> Add or Upgrade Modules.
 
-8) When you want to shutdown the VM, use the following command:
+9) When you want to shutdown the VM, use the following command:
     $ vagrant halt
 
 =========================================================================================
